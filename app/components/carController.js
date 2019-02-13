@@ -20,7 +20,7 @@ function logCars() {
 //Public
 export default class CarController {
     constructor() {
-        debugger
+        // debugger
         _cs.addSubscriber('cars', draw)
         _cs.addSubscriber('cars', logCars)
         draw()
@@ -36,7 +36,7 @@ export default class CarController {
             description: form.description.value,
             img: form.img.value
         }
-        debugger
+        // debugger
         _cs.addCar(newCar)
         //Clears the form
         form.reset()

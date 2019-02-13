@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+
+.card{
+    background-color:rgb(180, 178, 178);
+    display:flex;
+    align-items: center!important;
+}
+img{
+    padding-top: 20px;
+    display:flex;
+}

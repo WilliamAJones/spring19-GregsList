@@ -1,6 +1,6 @@
 let id = 1
 
-export default class Car {
+export default class House {
     constructor(data) {
         this.id = id
         this.price = data.price
@@ -17,7 +17,7 @@ export default class Car {
             <div class="card-body">
                 <h5 class="card-title">${this.title}</h5>
                 <p class="card-text">${this.description} -- ${this.price}</p>
-                <button onclick="app.controllers.carController.deleteCar(${this.id})">Remove</button>
+                <button onclick="app.controllers.houseController.deleteHouse(${this.id})">Remove</button>
             </div>
         </div>`
     }

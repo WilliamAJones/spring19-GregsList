@@ -19,6 +19,7 @@
             </div>
         </header>
         <section>
+            <div><h3>List Your Car</h3></div>
             <form onsubmit="app.controllers.carController.addCar(event)">
                 <input type="text" name="title" placeholder="Title" required>
                 <input type="text" name="description" placeholder="Description">
@@ -27,11 +28,42 @@
                 <button type="submit">Submit</button>
             </form>
         </section>
-        <main class="row" id="available-cars">
+        <main class="row d-flex justify-content-center" id="available-cars">
 
         </main>
     </section>
+    <section class="container-fluid">
+        <header class="row"></header>
+        <section>
+            <div><h3>List Your House</h3></div>
+            <form onsubmit="app.controllers.houseController.addHouse(event)">
+                <input type="text" name="title" placeholder="Title" required>
+                <input type="text" name="description" placeholder="Description">
+                <input type="number" name="price" placeholder="Price" required>
+                <input type="url" name="img" placeholder="Image" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <main class="row d-flex justify-content-center" id="available-houses">
 
+        </main>
+    </section>
+    <section class="container-fluid">
+            <header class="row"></header>
+            <section>
+                <div><h3>List Your Job</h3></div>
+                <form onsubmit="app.controllers.jobController.addJob(event)">
+                    <input type="text" name="title" placeholder="Title" required>
+                    <input type="text" name="description" placeholder="Description">
+                    <input type="number" name="price" placeholder="Hourly Wage" required>
+                    <input type="url" name="img" placeholder="Image" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <main class="row d-flex justify-content-center" id="available-jobs">
+    
+            </main>
+        </section>
 
 
     <script type="module" src="app/main.js"></script>
